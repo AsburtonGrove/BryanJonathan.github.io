@@ -146,6 +146,40 @@
           </div>
         </div>
       </div>
+
+      <section id="my-shoes">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Shoes</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="shoes-box">
+                <h4 class="shoes-name">Curry 3 zero colorways</h4>
+                <img src="img/shoes/1-removebg-preview.png" alt="Curry 3 Zero Colorways" class="shoes-img" />
+                <a href="#" class="btn btn-light shoes-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="shoes-box">
+                <h4 class="shoes-name">Nike Kyrie 2 Glow in the dark</h4>
+                <img src="img/shoes/3-removebg-preview.png" alt="Nike Kyrie 2 Glow in the Dark" class="shoes-img" />
+                <a href="#" class="btn btn-light shoes-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="shoes-box">
+                <h4 class="shoes-name">Nike Kyrie 3 Boston Celtics</h4>
+                <img src="img/shoes/2-removebg-preview.png" alt="Nike Kyrie 3 Boston Celtics" class="shoes-img" />
+                <a href="#" class="btn btn-light shoes-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -242,6 +276,15 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".shoes-box"), {
+        max: 35,
+        speed: 1000,
+        glare: true,
       });
     </script>
   </body>
